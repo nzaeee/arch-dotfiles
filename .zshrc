@@ -28,3 +28,5 @@ alias f="fuck"
 
 # source zshrc 
 alias reload="source ~/.zshrc"
+
+fastfetch
