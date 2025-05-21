@@ -43,6 +43,10 @@ else
   echo "Warning: zsh-syntax-highlighting not found at $ZSH_SYNTAX_HIGHLIGHTING_DIR"
 fi
 
+if [[ -z "$TMUX" && $- == *i* ]]; then
+  tmux new-session -A -s default
+fi
+
 # Modern replacements for standard commands
 alias ls="eza -a --no-filesize --long --color=always --icons=always --no-user"
 alias cat="bat"
@@ -51,7 +55,8 @@ alias cd="z"
 # Git related aliases
 alias g="git"
 alias ga="git add ."
-alias gs="git status -s"
+alias gst="git status"
+alias gs="git switch"
 alias gc='git commit -m'
 alias glog='git log --oneline --graph --all'
 alias lg="lazygit"
