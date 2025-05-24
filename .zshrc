@@ -70,11 +70,12 @@ alias f="fuck"
 # source zshrc 
 alias reload="source ~/.zshrc"
 
-fastfetch
-
 # bun completions
 [ -s "/home/nz/.bun/_bun" ] && source "/home/nz/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+fastfetch
+
