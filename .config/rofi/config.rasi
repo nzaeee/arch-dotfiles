@@ -2,7 +2,7 @@ configuration{
     icon-theme: "Papirus";
     show-icons: true;
 	location: 0;
-    terminal: "kitty";
+    terminal: "ghostty";
 	run-command: "{cmd}";
 	run-shell-command: "{terminal} --hold -e {cmd}";
 	drun-display-format: "{icon} {name}";
@@ -17,5 +17,4 @@ configuration{
     sidebar-mode: true;
 }
 
-//@theme "catppuccin-mocha"
 @theme "/home/nz/.local/share/rofi/themes/catppuccin-mocha.rasi"
